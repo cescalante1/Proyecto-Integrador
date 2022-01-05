@@ -372,22 +372,25 @@ footer
     height: 15%;
     display: flex;
     background-color: white;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
 
 
 .enlacefooter{
-    width: 10%;
-    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
 
 }
 
 .logofooter{
 
-    width: 30%;
-    height: 100%;
+    width: 15%;
+    height: 60%;
     transition: transform .3s; 
 }
  
