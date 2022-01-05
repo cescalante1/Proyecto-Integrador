@@ -1,0 +1,406 @@
+body{ 
+    background-color: black;
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+.encabezado{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.navegacion{
+
+    width: 60%;
+    height: 6%;
+    border: solid white;
+    font-size: 1.2rem;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-top: 40px;
+    position: fixed;
+    top: 0;
+
+
+}
+
+.list-nav{
+
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-item{
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    
+}
+
+.nav-item:hover{
+    border-radius: 1em;
+    background-color: #caccca;
+
+}
+
+
+.container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.div-imagenportada{
+
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.imagenportada{
+
+
+    animation-name:imagen-container;
+    animation-duration: 6s;
+    
+}
+
+@keyframes imagen-container{
+    from{
+
+        width: 0%;
+        height: 0%;
+
+    }
+
+    to{
+        width: 40%;
+        height: 100%;
+        animation-fill-mode: forwards;
+    }
+}
+
+.div-textoportada{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+
+}
+
+h1{
+    margin: 10px;
+    animation-name: tituloprincipal;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes tituloprincipal{
+
+        from{
+
+             color:black;
+
+        }
+
+        to{
+
+            color:white;
+            
+
+        }
+  }
+  
+
+
+.p-container{
+
+    margin: 30px;
+    font-size: 1.3rem;
+    animation-name: textoprincipal;
+    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes textoprincipal{
+
+        from{
+
+             color:black;
+
+        }
+
+        to{
+
+            color:white;
+            
+
+        }
+  }
+  
+  .imagen1html1{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .imagen1{
+
+    width: 90%;
+    height: 100%;
+
+
+  }
+
+  .productos{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .tarjeta{
+
+    width: 25%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 2em;
+    margin:2%
+
+
+
+  }
+
+  .imagentarjeta {
+
+    width: 60%;
+    height: 50%;
+    border-radius: 1rem;
+    transition: transform .3s; 
+}
+ 
+.imagentarjeta:hover {
+    transform: scale(1.4); 
+}
+
+
+  .enlaceproductos{
+
+    width: 30%;
+    height: 8%;
+    text-decoration: none;
+    color:black;
+    border:solid rgb(116, 116, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    border-radius: 2em;
+
+
+  }
+
+  .enlaceproductos:hover{
+    border-radius: 2em;
+    background-color: #caccca;
+
+}
+
+.unpocodesoda{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.unpocodesodaimg{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgunpocodesoda{
+
+    width: 90%;
+    height: 60%;
+    display: flex;
+
+}
+
+.unpocodesodatexto{
+
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 2em;
+}
+
+.textounpocodesoda{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+    color:black;
+    font-size: 1.15em;
+    padding: 2em;
+    text-align: center;
+    
+
+
+}
+
+.contacto{
+
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+
+}
+
+.formcontacto{
+
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border: solid white;
+    border-radius: 1em;
+    font-size: 1.2em;
+}
+
+.inputcontactoname{
+
+    width: 20%;
+    height: 8%;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.inputcontactoemail{
+
+    width: 30%;
+    height: 8%;
+    margin: 1em;
+    border-radius: 1em;
+
+}
+
+
+textarea{
+    
+    margin: 1em;
+    border-radius: 0.5em;
+}
+
+
+.enviarform {
+
+    width: 10%;
+    height: 10%;
+    border-radius: 1rem;
+    margin: 1em;
+}
+
+.enviarform:hover{
+
+    border-radius: 1em;
+    background-color: #caccca;
+}
+
+footer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.div-footer{
+
+    width: 100%;
+    height: 15%;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.enlacefooter{
+    width: 10%;
+    height: 35%;
+
+}
+
+.logofooter{
+
+    width: 30%;
+    height: 100%;
+    transition: transform .3s; 
+}
+ 
+.logofooter:hover {
+    transform: scale(1.4); 
+
+}
+
+h2{
+
+    color:white;
+
+}
+
+
+
