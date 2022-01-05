@@ -60,7 +60,7 @@ font-family: 'Playfair Display', serif;
 
 .container{
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
 
@@ -78,7 +78,8 @@ font-family: 'Playfair Display', serif;
 
 .imagenportada{
 
-
+    width: 40%;
+    height: 80%;
     animation-name:imagen-container;
     animation-duration: 6s;
     
@@ -94,7 +95,7 @@ font-family: 'Playfair Display', serif;
 
     to{
         width: 40%;
-        height: 100%;
+        height: 80%;
         animation-fill-mode: forwards;
     }
 }
@@ -222,8 +223,8 @@ h1{
 
   .enlaceproductos{
 
-    width: 30%;
-    height: 8%;
+    width: 40%;
+    height: 12%;
     text-decoration: none;
     color:black;
     border:solid rgb(116, 116, 116);
@@ -346,15 +347,16 @@ textarea{
 
 .enviarform {
 
-    width: 10%;
-    height: 10%;
-    border-radius: 1rem;
+    width: 30%;
+    height: 15%;
+    border-radius: 0.5rem;
     margin: 1em;
+    font-size: 1em;
 }
 
 .enviarform:hover{
 
-    border-radius: 1em;
+    border-radius: 0.5em;
     background-color: #caccca;
 }
 
