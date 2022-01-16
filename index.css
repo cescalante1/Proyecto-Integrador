@@ -296,6 +296,7 @@ h1{
     font-size: 1.15em;
     padding: 2em;
     text-align: center;
+    flex-wrap: scroll;
     
 
 
@@ -413,16 +414,17 @@ textarea{
 
 h3{
 
-    color:white;
+    color:black;
 
 }
 
 
 .body-register{
-   background-image: url(https://i0.wp.com/pulsonoticias.com.ar/wp-content/uploads/2021/05/soda-stereo1.jpg?fit=1200%2C675&ssl=1);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 100%;
+    background-image: url(https://i0.wp.com/pulsonoticias.com.ar/wp-content/uploads/2021/05/soda-stereo1.jpg?fit=1200%2C675&ssl=1);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 90vw;
+    height: 100vh;
 
 }
 
@@ -430,31 +432,32 @@ h3{
 .register{
 
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 
 }
 
 .form-register{
 
-    width: 60%;
-    height: 90%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 1,9rem;
+    width: 30%;
+    height: 100%;
+    margin-left: 3rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-size: 120%;
+     background-color: white;
 
 }
 
 .inputregistername{
 
-    width: 20%;
-    height: 5%;
+    width: 35%;
+    height: 6%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     
@@ -462,8 +465,8 @@ h3{
 
 .inputregisteremail{
 
-    width: 30%;
-    height: 5%;
+    width: 50%;
+    height: 6%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     
@@ -472,8 +475,8 @@ h3{
 
 .inputregisterpassword{
 
-    width: 25%;
-    height: 5%;
+    width: 50%;
+    height: 6%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     
@@ -482,12 +485,14 @@ h3{
 
 .botonregister {
 
-    width: 15%;
-    height: 5%;
+    width: 40%;
+    height: 10%;
     border-radius: 0.5rem;
     font-size: 1rem;
     margin: 2rem;
 }
+
+
 
 .botonregister:hover{
 
@@ -495,19 +500,49 @@ h3{
     background-color: #caccca;
 }
 
+
+.enlaceformregister-redsocial{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 30%;
+
+
+ }
+
+ .logoformregister-redsocialfb{
+
+
+    width: 45%;
+    height: 50%;
+ }
+
+ .logoformregister-redsocialgoogle{
+
+
+    width: 40%;
+    height: 50%;
+ }
+
 .footer-register{
 
-    width: 80%;
-    height: 10%;
-    color: white;
+    width: 98vw;
+     height: 10%;
+     background-color:black;
+     display: flex;
+     margin-top: 2%;
+
+
+}
+
+.divfooter-register{
+
+    width: 100%;
+    height: 100%;
     display: flex;
-    border: solid whitesmoke;
-    border-style: groove;
-    background-color: black;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
-
 
 }
 
@@ -534,3 +569,152 @@ h3{
     transform: scale(1.4); 
 
 }
+
+
+.body-Login{
+
+    background-image: url(https://i0.wp.com/pulsonoticias.com.ar/wp-content/uploads/2021/05/soda-stereo1.jpg?fit=1200%2C675&ssl=1);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 90vw;
+    height: 100vh;
+ }
+ 
+ 
+ .Login{
+ 
+     width: 100%;
+     height: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-direction: column;
+ 
+ }
+ 
+ .form-Login{
+ 
+    width: 30%;
+    height: 80%;
+    margin-left: 3rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-size: 130%;
+     background-color: white;
+ 
+ }
+ 
+ 
+ .inputLoginemail{
+ 
+     width: 50%;
+     height: 7%;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     
+ 
+ }
+ 
+ .inputLoginpassword{
+ 
+     width: 40%;
+     height: 7%;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     
+ }
+ 
+ 
+ .botonLogin {
+    
+    width: 40%;
+    height: 8%;
+     border-radius: 0.5rem;
+     font-size: 1rem;
+     margin: 2rem;
+ }
+ 
+ .botonLogin:hover{
+ 
+     border-radius: 0.5rem;
+     background-color: #caccca;
+ }
+
+ .forgotpassword{
+
+    font-size: 70%;
+
+ }
+
+ .enlaceformlogin-redsocial{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 30%;
+
+
+ }
+
+ .logoformlogin-redsocialfb{
+
+
+    width: 50%;
+    height: 75%;
+ }
+
+ .logoformlogin-redsocialgoogle{
+
+
+    width: 45%;
+    height: 30%;
+ }
+ 
+ .footer-Login{
+    width: 98vw;
+     height: 10%;
+     background-color:black;
+     display: flex;
+     margin-top: 2%;
+    
+     
+ 
+ 
+ }
+
+ .divfooter-login{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ 
+ 
+ 
+ .enlacefooter-Login{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 30%;
+     height: 100%;
+ 
+ }
+ 
+ .logofooter-Login{
+     display: flex;
+     width: 10%;
+     height: 50%;
+     transition: transform .3s; 
+ 
+ }
+  
+ .logofooter-Login:hover {
+     transform: scale(1.4); 
+ 
+ }
+
