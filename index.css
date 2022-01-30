@@ -1,3 +1,5 @@
+/*INDEX*/
+
 body{ 
 background-color: black;
 font-family: 'Alfa Slab One', cursive;
@@ -28,12 +30,17 @@ font-family: 'Playfair Display', serif;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    margin-top: 40px;
+
     position: fixed;
     top: 0;
     border-style: groove ;
 
 
+}
+
+#pull{
+
+    display: none;
 }
 
 .list-nav{
@@ -176,7 +183,7 @@ h1{
 
   .imagen1{
 
-    width: 90%;
+    width: 100%;
     height: 100%;
 
 
@@ -184,14 +191,14 @@ h1{
 
   .productos{
 
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color:white ;
+    border-style: groove ;
     margin-top: 10em;
-    margin-left: 12em;
     border-radius: 1em;
     border-style: groove ;
     
@@ -219,11 +226,12 @@ h1{
     width: 60%;
     height: 50%;
     border-radius: 1rem;
-    transition: transform .3s; 
+    transition: transform .7s; 
 }
  
 .imagentarjeta:hover {
     transform: scale(1.4); 
+    filter: brightness(50%);
 }
 
 
@@ -231,14 +239,15 @@ h1{
 
     width: 40%;
     height: 12%;
-    text-decoration: none;
+    text-decoration:none;
     color:black;
-    border:solid rgb(116, 116, 116);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15%;
     border-radius: 2em;
+    transition: background-color, font-size .7s;
+
 
 
   }
@@ -246,6 +255,7 @@ h1{
   .enlaceproductos:hover{
     border-radius: 2em;
     background-color: #caccca;
+    font-size: 125%;
 
 }
 
@@ -256,11 +266,12 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10em;
 }
 
 .unpocodesodaimg{
 
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -270,26 +281,27 @@ h1{
 
 .imgunpocodesoda{
 
-    width: 90%;
-    height: 60%;
+    width: 100%;
+    height: 80%;
     display: flex;
 
 }
 
 .unpocodesodatexto{
 
-    width: 40%;
-    height: 60%;
+    width: 30%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
+    border-style: groove ;
     border-radius: 2em;
 }
 
 .textounpocodesoda{
 
-    width: 100%;
+    width: 80%;
     height: 80%;
     display: flex;
     color:black;
@@ -302,6 +314,11 @@ h1{
 
 }
 
+.mensajecontacto{
+
+    text-align: center;
+}
+
 .contacto{
 
     width: 100%;
@@ -309,28 +326,30 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5em;
+    flex-direction: column;
+    margin-top: 4em;
 
 }
 
 .formcontacto{
 
-    width: 50%;
+    width: 65%;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
-    border: solid white;
+    color: black;
+    background-color: white;
+    border: groove white;
     border-radius: 1em;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .inputcontactoname{
 
     width: 20%;
-    height: 10%;
+    height: 5%;
     margin: 1em;
     
 }
@@ -338,7 +357,7 @@ h1{
 .inputcontactoemail{
 
     width: 30%;
-    height: 10%;
+    height: 5%;
     margin: 1em;
     
 
@@ -354,8 +373,8 @@ textarea{
 
 .enviarform {
 
-    width: 30%;
-    height: 15%;
+    width: 20%;
+    height: 5%;
     border-radius: 0.5rem;
     margin: 1em;
     font-size: 1em;
@@ -370,6 +389,19 @@ textarea{
 .footer-index
 {
     width: 100%;
+    height: 20%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(159,160,161,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.footer-redes{
+
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -379,24 +411,13 @@ textarea{
 
 }
 
-.div-footer{
-
-    width: 80%;
-    height: 10%;
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
 
 .enlacefooter{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 100%;
+    width: 35%;
+    height: 50%;
 
 }
 
@@ -412,19 +433,496 @@ textarea{
 
 }
 
+.footer-contacto{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 110%;
+    
+}
+
+.item-contacto-footer
+{
+    list-style: none;
+    padding: 1em;
+
+}
+
 h3{
 
     color:black;
 
 }
 
+@media (max-width: 320px) {
+
+    body{ 
+        background-color: black;
+        font-family: 'Alfa Slab One', cursive;
+        font-family: 'Anton', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        width: 100%;
+        height: 100%;
+        
+        }
+        
+        .encabezado{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        
+        }
+        
+        .navegacion{
+        
+            width: 100%;
+            height: 5%;
+            border: solid white;
+            font-size: 0.5em;
+            border-radius: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            border-style: groove ;
+        
+        
+        }
+
+        
+        .list-nav{
+        
+            display: flex;
+            list-style: none;
+        
+        }
+        
+        .nav-item{
+            color: black;
+            text-decoration: none;
+            
+        }
+        
+        .nav-item:hover{
+            border-radius: 0.5em;
+            background-color: #caccca;
+        
+        }
+        
+        
+        .container{
+            width: 100%;
+            height: 80%;
+            display: flex;
+        
+        }
+        
+        .div-imagenportada{
+        
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        
+        
+        }
+        
+        .imagenportada{
+        
+            width: 100%;
+            height: 65%;
+            animation-name:imagen-container;
+            animation-duration: 6s;
+            
+        }
+        
+        @keyframes imagen-container{
+            from{
+        
+                width: 0%;
+                height: 0%;
+        
+            }
+        
+            to{
+                width: 100%;
+                height: 65%;
+                animation-fill-mode: forwards;
+            }
+        }
+        
+        .div-textoportada{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+                    
+        }
+        
+        h1{
+            animation-name: tituloprincipal;
+            animation-delay: 3s;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            font-size: 0.5em;
+        
+          }
+        
+          @keyframes tituloprincipal{
+        
+                from{
+        
+                     color:black;
+        
+                }
+        
+                to{
+        
+                    color:white;
+                    
+        
+                }
+          }
+          
+        
+        
+        .p-container{
+        
+            font-size: 0.5em;
+            animation-name: textoprincipal;
+            animation-delay: 4s;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        
+          }
+        
+          @keyframes textoprincipal{
+        
+                from{
+        
+                     color:black;
+        
+                }
+        
+                to{
+        
+                    color:white;
+                    
+        
+                }
+          }
+          
+          .imagen1html1{
+        
+            width: 100%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+          }
+        
+          .imagen1{
+        
+            width: 100%;
+            height: 70%;
+        
+        
+          }
+        
+          .productos{
+        
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            background-color:white ;
+            border-style: groove ;
+            border-radius: 1em;
+            
+        
+        
+          }
+        
+          .tarjeta{
+        
+            width: 25%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 2em;
+            font-size: 0.8em;
+        
+        
+        
+          }
+        
+          .imagentarjeta {
+        
+            width: 60%;
+            height: 10%;
+            border-radius: 1rem;
+            transition: transform .7s; 
+        }
+         
+        .imagentarjeta:hover {
+            transform: scale(1.4); 
+            filter: brightness(50%);
+        }
+        
+        
+          .enlaceproductos{
+        
+            width: 95%;
+            height: 5%;
+            text-decoration:none;
+            color:black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15%;
+            border-radius: 2em;
+            transition: background-color, font-size .7s;
+        
+        
+        
+          }
+
+          .enlaceproductos:hover{
+            border-radius: 2em;
+            background-color: #caccca;
+            font-size: 125%;
+        
+        }
+
+          
+        
+        
+        .unpocodesoda{
+        
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10em;
+        }
+        
+        .unpocodesodaimg{
+        
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        
+        .imgunpocodesoda{
+        
+            width: 100%;
+            height: 80%;
+            display: flex;
+        
+        }
+        
+        .unpocodesodatexto{
+        
+            width: 30%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-style: groove ;
+            border-radius: 2em;
+        }
+        
+        .textounpocodesoda{
+        
+            width: 80%;
+            height: 80%;
+            display: flex;
+            color:black;
+            font-size: 1.15em;
+            padding: 2em;
+            text-align: center;
+            flex-wrap: scroll;
+            
+        
+        
+        }
+        
+        .mensajecontacto{
+        
+            text-align: center;
+        }
+        
+        .contacto{
+        
+            width: 100%;
+            height: 85%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 4em;
+        
+        }
+        
+        .formcontacto{
+        
+            width: 65%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: black;
+            background-color: white;
+            border: groove white;
+            border-radius: 1em;
+            font-size: 1.1em;
+        }
+        
+        .inputcontactoname{
+        
+            width: 20%;
+            height: 5%;
+            margin: 1em;
+            
+        }
+        
+        .inputcontactoemail{
+        
+            width: 30%;
+            height: 5%;
+            margin: 1em;
+            
+        
+        }
+        
+        
+        textarea{
+            
+            margin: 1em;
+            
+        }
+        
+        
+        .enviarform {
+        
+            width: 20%;
+            height: 5%;
+            border-radius: 0.5rem;
+            margin: 1em;
+            font-size: 1em;
+        }
+        
+        .enviarform:hover{
+        
+            border-radius: 0.5em;
+            background-color: #caccca;
+        }
+        
+        .footer-index
+        {
+            width: 100%;
+            height: 20%;
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(159,160,161,1) 100%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+        
+        }
+        
+        .footer-redes{
+        
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        
+        
+        }
+        
+        
+        .enlacefooter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35%;
+            height: 50%;
+        
+        }
+        
+        .logofooter{
+        
+            width: 10%;
+            height: 50%;
+            transition: transform .3s; 
+        }
+         
+        .logofooter:hover {
+            transform: scale(1.4); 
+        
+        }
+        
+        .footer-contacto{
+        
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 110%;
+            
+        }
+        
+        .item-contacto-footer
+        {
+            list-style: none;
+            padding: 1em;
+        
+        }
+        
+        h3{
+        
+            color:black;
+        
+        }
+    
+}
+
+/*PAGINA REGISTRO*/
 
 .body-register{
     background-image: url(https://i0.wp.com/pulsonoticias.com.ar/wp-content/uploads/2021/05/soda-stereo1.jpg?fit=1200%2C675&ssl=1);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 90vw;
-    height: 100vh;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
 
 }
 
@@ -432,7 +930,7 @@ h3{
 .register{
 
     width: 100%;
-    height: 90%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -449,8 +947,9 @@ h3{
      justify-content: center;
      align-items: center;
      flex-direction: column;
-     font-size: 120%;
+     font-size: 110%;
      background-color: white;
+     border-style: groove ;
 
 }
 
@@ -511,58 +1010,48 @@ h3{
 
  }
 
- .logoformregister-redsocialfb{
 
-
-    width: 45%;
-    height: 50%;
- }
-
- .logoformregister-redsocialgoogle{
-
-
-    width: 40%;
-    height: 50%;
- }
-
-.footer-register{
-
-    width: 98vw;
-     height: 10%;
-     background-color:black;
-     display: flex;
-     margin-top: 2%;
+ .footer-register
+{
+    width: 100%;
+    height: 20%;
+    margin-top: 10em;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(159,160,161,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 
 }
 
-.divfooter-register{
+.footer-redes-register{
 
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
 
 }
-
 
 
 .enlacefooter-register{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 100%;
+    width: 35%;
+    height: 50%;
 
 }
 
 .logofooter-register{
-    display: flex;
+
     width: 10%;
     height: 50%;
     transition: transform .3s; 
-
 }
  
 .logofooter-register:hover {
@@ -570,21 +1059,45 @@ h3{
 
 }
 
+.footer-contacto-register{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 110%;
+    
+}
+
+.item-contacto-footer-register
+{
+    list-style: none;
+    padding: 1em;
+
+}
+
+/*PAGINA LOGIN*/
+
 
 .body-Login{
 
     background-image: url(https://i0.wp.com/pulsonoticias.com.ar/wp-content/uploads/2021/05/soda-stereo1.jpg?fit=1200%2C675&ssl=1);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 90vw;
-    height: 100vh;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+
  }
  
  
  .Login{
  
      width: 100%;
-     height: 90%;
+     height: 100%;
      display: flex;
      justify-content: center;
      align-items: flex-start;
@@ -595,14 +1108,15 @@ h3{
  .form-Login{
  
     width: 30%;
-    height: 80%;
+    height: 70%;
     margin-left: 3rem;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
-     font-size: 130%;
+     font-size: 120%;
      background-color: white;
+     border-style: groove ;
  
  }
  
@@ -610,7 +1124,7 @@ h3{
  .inputLoginemail{
  
      width: 50%;
-     height: 7%;
+     height: 4%;
      margin-top: 1rem;
      margin-bottom: 1rem;
      
@@ -620,7 +1134,7 @@ h3{
  .inputLoginpassword{
  
      width: 40%;
-     height: 7%;
+     height: 4%;
      margin-top: 1rem;
      margin-bottom: 1rem;
      
@@ -630,7 +1144,7 @@ h3{
  .botonLogin {
     
     width: 40%;
-    height: 8%;
+    height: 4%;
      border-radius: 0.5rem;
      font-size: 1rem;
      margin: 2rem;
@@ -645,6 +1159,8 @@ h3{
  .forgotpassword{
 
     font-size: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
  }
 
@@ -653,68 +1169,75 @@ h3{
     justify-content: center;
     align-content: center;
     width: 100%;
-    height: 30%;
+    height: 10%;
 
 
  }
 
- .logoformlogin-redsocialfb{
+ 
+ 
+ .footer-login
+{
+    width: 100%;
+    height: 20%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(159,160,161,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+
+}
+
+.footer-redes-login{
 
     width: 50%;
-    height: 75%;
- }
-
- .logoformlogin-redsocialgoogle{
-
-
-    width: 45%;
-    height: 30%;
- }
- 
- .footer-Login{
-    width: 98vw;
-     height: 10%;
-     background-color:black;
-     display: flex;
-     margin-top: 2%;
-    
-     
- 
- 
- }
-
- .divfooter-login{
-
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
- }
- 
- 
- 
- .enlacefooter-Login{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 30%;
-     height: 100%;
- 
- }
- 
- .logofooter-Login{
-     display: flex;
-     width: 10%;
-     height: 50%;
-     transition: transform .3s; 
- 
- }
-  
- .logofooter-Login:hover {
-     transform: scale(1.4); 
- 
- }
 
+}
+
+
+.enlacefooter-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 50%;
+
+}
+
+.logofooter-login{
+
+    width: 10%;
+    height: 50%;
+    transition: transform .3s; 
+}
+ 
+.logofooter-login:hover {
+    transform: scale(1.4); 
+
+}
+
+.footer-contacto-login{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 110%;
+    
+}
+
+.item-contacto-footer-login
+{
+    list-style: none;
+    padding: 1em;
+
+}
